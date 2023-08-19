@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard || Baaper Bank</title>
+</head>
+<body>
+  <header>
+    <h1 class="text-5xl font-medium text-center my-6">Welcome to <span class="text-fuchsia-700">Baaper Bank!!</span></h1>
+  </header>
+
+  <main class="block mx-auto max-w-6xl">
+    <div class="my-6 lg:my-14 mx-3 lg:mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-gradient-to-tr from-teal-500 to-teal-300 text-white p-6 rounded-xl">
+            <h3 class="text-2xl mb-2">Deposite</h3>
+            <p class="text-5xl font-semibold">$ <span id="total-deposite">00</span></p>
+        </div>
+        <div class="bg-gradient-to-tr from-slate-500 to-slate-300 text-white p-6 rounded-xl">
+            <h3 class="text-2xl mb-2">Withdraw</h3>
+            <p class="text-5xl font-semibold">$ <span id="total-withdraw">00</span></p>
+        </div>
+        <div class="bg-gradient-to-tr from-rose-500 to-rose-300 text-white p-6 rounded-xl">
+            <h3 class="text-2xl mb-2">Balance</h3>
+            <p class="text-5xl font-semibold">$ <span id="total-balance">1000</span></p>
+        </div>
+    </div>
+
+    <div class="my-4 lg:my-10 mx-3 lg:mx-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-gradient-to-tr from-sky-500 to-amber-200 text-white p-6 rounded-xl">
+        <h3 class="text-2xl mb-3">Deposite Money</h3>
+        <div class="px-3">
+          <input id="deposite-box" type="text" class="text-gray-800 px-4 py-3 border-teal-700 border rounded-lg block w-full mb-3" placeholder="Enter Ammount to Deposite">
+          <button id="deposite-btn" class="px-4 py-2 bg-fuchsia-600 hover:bg-fuchsia-800 rounded-xl font-semibold">
+            Deposite
+          </button>
+        </div>
+      </div>
+      <div class="bg-gradient-to-tr from-indigo-500 to-cyan-300 text-white p-6 rounded-xl">
+        <h3 class="text-2xl mb-3">Withdraw Money</h3>
+        <div class="px-3">
+          <input id="withdraw-box" type="text" class="text-gray-800 px-4 py-3 border-teal-700 border rounded-lg block w-full mb-3" placeholder="Enter Ammount to Withdraw">
+          <button id="withdraw-btn" class="px-4 py-2 bg-fuchsia-600 hover:bg-fuchsia-800 rounded-xl font-semibold">
+            withdraw
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
